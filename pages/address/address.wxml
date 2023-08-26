@@ -1,0 +1,63 @@
+<view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+  
+
+  <view class="detail-address">
+    <view class="section_title">受礼人姓名：</view>
+    <input name="receiverName" placeholder="名字" value="{{receiverName}}" />
+  </view>
+
+  <view class="detail-address">
+    <view class="section_title">受礼人职务：</view>
+    <input name="receiverPosition" placeholder="职务" value="{{receiverPosition}}" />
+  </view>
+
+  <view class="detail-address">
+    <view class="section_title">外方机构：</view>
+    <input name="foreignOrganization" placeholder="外方机构名称" value="{{foreignOrganization}}" />
+  </view>
+
+  <view class="detail-address">
+    <view class="section_title">赠送人姓名：</view>
+    <input name="giftName" placeholder="姓名" value="{{giftName}}" />
+  </view>
+
+  <view class="detail-address">
+    <view class="section_title">赠送人职务：</view>
+    <input name="giftPosition" placeholder="职务" value="{{giftPosition}}" />
+  </view>
+
+  <view class="detail-address">
+    <view class="section_title">任务类别：</view>
+    <picker class="detail-address" mode="selector" range="{{['会见会谈', '出访']}}" bindchange="handlePickerChange1">
+      <view class="picker">
+        {{pickerValue1}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="detail-address">
+    <view class="section_title">受理人级别：</view>
+    <picker class="detail-address" mode="selector" range="{{['部级', '司局级']}}" bindchange="handlePickerChange2">
+      <view class="picker">
+        {{pickerValue2}}
+      </view>
+    </picker>
+  </view>
+
+
+  <view class="detail-address">
+    <view class="section_title">申办科室：</view>
+    <input name="remark" placeholder="备注信息" value="{{remark}}" />
+  </view>
+
+
+  <view class="btn-area">
+    <button formType="submit" type='primary'>确认提交</button>
+    <!--<button formType="reset">清空表单</button>-->
+  </view>
+  </form>
+
+  <view class="btntt" style="height:5em;">
+  </view>
+</view>

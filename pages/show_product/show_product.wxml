@@ -1,0 +1,36 @@
+<view>
+  <view>
+    <image class="head-img" src="{{product.pics_big}}" mode="aspectFit" />
+  </view>
+
+  <view class="product-name"><text>{{product.goods_name}}</text></view>
+  <view>
+    <form>
+      <view class="line">
+        <view class="section price">
+          <view >
+            <text id="price">¥{{product['goods_price']}}</text>
+          </view>
+          <view >
+            <text id="number">库存：{{product['goods_number']}}个</text>
+          </view>          
+        </view>
+      </view>
+      <view class="btn-area">
+        <button bindtap="bindAddToCart" type="primary">加入购物车</button>
+      </view>
+    </form>
+  </view>
+
+  <view class="separate"></view>
+
+  <view class="desc-container">
+    <text>
+      {{product.goods_introduce}}
+    </text>
+  </view>
+</view>
+
+<view id="codeFloating" catchtouchmove="changeCodeState" catchtap="catchScaleCode" animation="{{codeFloating.data}}">
+  <image src="{{codeFloating.url}}" style="{{codeFloating.imgStyle}}"></image>
+</view>

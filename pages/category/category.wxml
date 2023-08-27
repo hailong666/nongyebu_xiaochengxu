@@ -17,7 +17,7 @@
               <text class="name">{{item.name}}</text>
             </view>
             <view class="second-line">
-              <view wx:if="{{ accountType === '巴爷' }}">
+              <view wx:if="{{ accountType === '礼宾礼品管理' }}">
                 <text>¥{{item['baye-price']}}</text>
               </view>
               <view wx:else>

@@ -31,7 +31,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: this.data.product.name,
-      desc: "巴爷供销社 － 高品质购物",
+      desc: "礼宾礼品管理 － 礼品管理",
       path: `pages/show_product/show_product?id=${this.data.product.id}&share=1`
     }
   },

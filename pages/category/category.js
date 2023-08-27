@@ -12,7 +12,7 @@ Page({
   onLoad: function(params) {
     var that = this
     this.setData({
-      title: '巴爷供销社 - ' + params.type,
+      title: '礼宾礼品管理 - ' + params.type,
       categoryType: params.type
     })
     product.getCategories(params.typeId, function(result) {

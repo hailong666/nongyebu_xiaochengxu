@@ -19,7 +19,7 @@ Page({
 
   onShareAppMessage: function () {
     return {
-      title: "巴爷供销社",
+      title: "礼宾礼品",
       desc: "商城首页",
       path: `pages/index/index`
     }

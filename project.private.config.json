@@ -3,6 +3,6 @@
   "projectname": "wechat_mall_applet",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true
   }
 }
